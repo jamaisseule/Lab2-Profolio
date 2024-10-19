@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* ----HOME------ */
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #1959d1;
+}
+
+.home-content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #1959d1;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #1959d1;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #1959d1;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #1959d1;
+    box-shadow: 0  0 25px #1959d1;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #1959d1;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #1959d1;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #1959d1;
+    color: black;
+    box-shadow: 0 0 25px #1959d1;
+}
+
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+
+/* ------------------------------------------- */
+
+
+/* ----------- ABOUT ME ------------- */
+
+.about {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    background-color: #333;
+}
+
+.about-img {
+	display: grid;
+	place-items: center;
+}
+
+.about-img img {
+	position: relative;
+	width: 30vw;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.heading {
+	text-align: center;
+	font-size: 4rem;
+}
+
+.about-content h2 {
+	text-align: left;
+	line-height: 1.5;
+}
+
+.about-content h3 {
+	font-size: 2rem;
+}
+
+.about-content p {
+	font-size: 1.1rem;
+	margin: 2rem 0 3rem;
+}
+
+@media (max-width: 1000px){
+    .about{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .about{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .about .about-content h3{
+        font-size: 2.5rem;
+    }
+
+    .about-content h1{
+        font-size: 5rem;
+    }
+
+    .about-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+/* ------------------------------------------- */
+
