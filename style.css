@@ -8,21 +8,22 @@
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
+	text-align: justify;
 }
 
 body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
     color: white;
+	background: black;
 }
 
 /* ----HOME------ */
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 3rem 9% 3rem;
 }
 
 .home{
@@ -114,33 +115,6 @@ span{
     box-shadow: 0 0 25px #1959d1;
 }
 
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
-}
-
-@media(max-width:995px){
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
-
-
 /* ------------------------------------------- */
 
 
@@ -184,32 +158,84 @@ span{
 	font-size: 1.1rem;
 	margin: 2rem 0 3rem;
 }
-
-@media (max-width: 1000px){
-    .about{
-        gap: 4rem;
-    }
+.btn-skill{
+    background-color: #333;
 }
 
-@media(max-width:995px){
-    .about{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .about .about-content h3{
-        font-size: 2.5rem;
-    }
-
-    .about-content h1{
-        font-size: 5rem;
-    }
-
-    .about-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
 
 /* ------------------------------------------- */
+
+/* ----education$skill */
+
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột bằng nhau */
+    gap: 30px; /* Khoảng cách giữa 2 cột */
+    padding: 50px;
+    background-color: black;
+    margin: 30px 0;
+}
+
+/* Styles for Education Column */
+.education {
+    padding: 30px;
+    background-color: #333;
+	border-radius: 10px;
+}
+
+
+/* Timeline container */
+.timeline .container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+/* Column for year */
+.year {
+    flex: 1; 
+    font-size: 1em;
+    color: #f2b441;
+    text-align: right; 
+    padding-right: 20px;
+    border-right: 2.5px solid #f2b441; /* Đường thẳng chia cách */
+}
+
+/* Column for details */
+.details {
+    flex: 3;
+    padding-left: 20px;
+}
+
+.details h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Styles for Skills Column */
+.skill-item i {
+    font-size: 80px; /* Điều chỉnh kích thước lớn hơn */
+    color: #f2b441;  /* Đặt màu sắc cho biểu tượng nếu cần */
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột với chiều rộng bằng nhau */
+    gap: 10px; /* Khoảng cách giữa các skill items */
+    padding: 10px;
+}
+
+.skill-item {
+    flex: 1;
+    font-size: 1em;
+    color: #f2b441;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 2.5px solid #f2b441; 
+}
+
 
