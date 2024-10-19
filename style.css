@@ -166,8 +166,6 @@ span{
 /* ------------------------------------------- */
 
 /* ----education$skill */
-
-
 .two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Chia thành 2 cột bằng nhau */
@@ -180,17 +178,23 @@ span{
 /* Styles for Education Column */
 .education {
     padding: 30px;
-    background-color: #333;
-	border-radius: 10px;
+    background-color: black;
+    border-radius: 10px;
 }
 
+/* Styles for Skills and Languages Column */
+.skills-languages {
+    padding: 30px;
+    background-color: #333;
+    border-radius: 10px;
+}
 
 /* Timeline container */
 .timeline .container {
     display: flex;
     align-items: flex-start;
     margin-bottom: 30px;
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 /* Column for year */
@@ -206,7 +210,7 @@ span{
 /* Column for details */
 .details {
     flex: 3;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .details h2 {
@@ -214,11 +218,9 @@ span{
     margin-bottom: 10px;
 }
 
-
-
 /* Styles for Skills Column */
 .skill-item i {
-    font-size: 80px; /* Điều chỉnh kích thước lớn hơn */
+    font-size: 70px; /* Điều chỉnh kích thước lớn hơn */
     color: #f2b441;  /* Đặt màu sắc cho biểu tượng nếu cần */
 }
 
@@ -226,7 +228,7 @@ span{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột với chiều rộng bằng nhau */
     gap: 10px; /* Khoảng cách giữa các skill items */
-    padding: 10px;
+    padding: 20px;
 }
 
 .skill-item {
@@ -237,5 +239,51 @@ span{
     padding-left: 20px;
     border-left: 2.5px solid #f2b441; 
 }
+
+
+/* ---HOBBIES----- */
+.hobbies {
+    text-align: center;
+    margin: auto;
+	background: #333;
+}
+
+.hobbies h2 {
+    font-size: 2em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: space-around; /* Tạo khoảng cách đều giữa các mục */
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Đảm bảo mục không bị tràn trên màn hình nhỏ */
+}
+
+.hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    flex: 1 1 20%; /* Đảm bảo các mục chiếm tỷ lệ phù hợp và không tràn */
+    padding: 10px;
+}
+
+.hobby-item i {
+    font-size: 3em;
+    color: #f2b441; /* Màu biểu tượng */
+    margin-bottom: 10px;
+}
+
+.hobby-item p {
+    font-size: 0.9em;
+    color: white;
+    margin: 0;
+}
+
+
 
 
