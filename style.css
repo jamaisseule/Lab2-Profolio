@@ -206,15 +206,14 @@ span{
     flex: 1; 
     font-size: 1.5em;
     color: #FF6500;
-    text-align: right; 
-    padding-right: 20px;
-    border-right: 2.5px solid #FF6500; /* Đường thẳng chia cách */
 }
 
 
 .details {
     flex: 3;
-    padding-left: 30px;
+    text-align: left; 
+    padding-left: 20px;
+    border-left: 2px solid #FF6500; /* Đường thẳng chia cách */
 }
 
 .details h2 {
@@ -239,6 +238,17 @@ span{
 	box-shadow: 10px 10px 8px #888888;
 }
 
+.skill-item {
+    flex: 1;
+    font-size: 1em;
+    color: #FF6500;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 2.5px solid #FF6500; 
+    align-items: center;
+    justify-content: center;
+}
+
 .skill-item i {
     font-size: 70px; 
     color: #FF6500; 
@@ -251,14 +261,7 @@ span{
     padding: 40px;
 }
 
-.skill-item {
-    flex: 1;
-    font-size: 1em;
-    color: #FF6500;
-    text-align: left;
-    padding-left: 20px;
-    border-left: 2.5px solid #FF6500; 
-}
+
 
 .skill-item p {
     font-size: 2em;
@@ -371,4 +374,119 @@ span{
 .footer-bottom p {
     margin: 0;
     font-size: 1.5em;
+}
+
+/* ----------------------------------------- */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 5%;
+    }
+
+    .home .home-content h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 50vw;
+        margin: auto;
+    }
+
+  
+    .about {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-img img {
+        width: 50vw;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1.6rem;
+    }
+
+
+    .two-columns {
+        grid-template-columns: 1fr; /* Chuyển về 1 cột */
+        padding: 20px;
+    }
+
+    .timeline .container {
+        flex-direction: column; /* Chuyển container thành dạng cột */
+        align-items: flex-start;
+    }
+
+    .year {
+        text-align: left;
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    .details h2 {
+        font-size: 2rem;
+    }
+
+    .details p {
+        font-size: 1.8rem;
+    }
+
+
+    .skill-item i {
+        font-size: 50px; 
+    }
+
+ 
+    .hobby-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-item {
+        flex: 1 1 80%;
+    }
+
+    .hobby-item i {
+        font-size: 3em;
+    }
+
+    .hobby-item p {
+        font-size: 1.4em;
+    }
+
+   
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .workplace {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+  
+    .footer-bottom p {
+        font-size: 1.2em;
+    }
 }
