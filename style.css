@@ -453,9 +453,8 @@ span{
     }
 
 
-    .skill-container {
-        grid-template-columns: 1fr; /* Chuyển skill items về 1 cột */
-        padding: 20px;
+    .skill-item i {
+        font-size: 50px; 
     }
 
  
